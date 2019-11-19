@@ -8,7 +8,7 @@ import java.util.*;
  * api接口校验
  */
 public class ApiCheckUtils {
-	//校验处理
+	//签名校验
 	public static int check_request(Map<String, Object> params){
 		Long timestamp = Long.valueOf(params.get("timestamp").toString()); //时间戳
 		String receive_check_code = params.get("checkCode").toString(); //校验码
